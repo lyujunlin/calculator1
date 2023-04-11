@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>예쁜 계산기</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen"></div>
+      <div class="button-row">
+        <button class="button clear">C</button>
+        <button class="button operator">÷</button>
+        <button class="button operator">×</button>
+      </div>
+      <div class="button-row">
+        <button class="button number">7</button>
+        <button class="button number">8</button>
+        <button class="button number">9</button>
+        <button class="button operator">-</button>
+      </div>
+      <div class="button-row">
+        <button class="button number">4</button>
+        <button class="button number">5</button>
+        <button class="button number">6</button>
+        <button class="button operator">+</button>
+      </div>
+      <div class="button-row">
+        <button class="button number">1</button>
+        <button class="button number">2</button>
+        <button class="button number">3</button>
+        <button class="button equals">=</button>
+      </div>
+      <div class="button-row">
+        <button class="button number zero">0</button>
+        <button class="button decimal">.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+}
+
+.calculator {
+  width: 300px;
+  margin: 50px auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: right;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.button-row {
+  display: flex;
+}
+
+.button {
+  flex: 1;
+  font-size: 18px;
+  padding: 15px;
+  background-color: #e6e6e6;
+  border: none;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #d9d9d9;
+}
+
+.button.operator {
+  background-color: #f2f2f2;
+  color: #666;
+}
+
+.button.operator:hover {
+  background-color: #e6e6e6;
+}
+
+.button.equals {
+  background-color: #f2b632;
+  color: #fff;
+}
+
+.button.equals:hover {
+  background-color: #e6a31e;
+}
+
+.button.zero {
+  flex: 2;
+}
+
+.decimal
